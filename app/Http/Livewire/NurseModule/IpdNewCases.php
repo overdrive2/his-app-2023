@@ -14,7 +14,11 @@ class IpdNewCases extends Component
     public $showEditModal = false;
     public $an;
     public $ward_id;
-    public $ipd;
+    public $ipd = [
+        'an' => '',
+        'hn' => '',
+        'fullname' => ''
+    ];
 
     public function new($an)
     {
@@ -42,6 +46,11 @@ class IpdNewCases extends Component
     public function updatedIpd($value)
     {
         //dd($value);
+    }
+
+    public function save()
+    {
+        dd($this->ipd);
     }
 
     public function render()

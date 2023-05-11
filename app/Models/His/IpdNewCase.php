@@ -11,7 +11,7 @@ class IpdNewCase extends Model
 {
     use HasFactory, FunctionDateTimes;
 
-    protected $connection = 'his';
+    //protected $connection = 'his';
     protected $table = 'his_ipd_newcase';
 
     public function getFullnameAttribute()
