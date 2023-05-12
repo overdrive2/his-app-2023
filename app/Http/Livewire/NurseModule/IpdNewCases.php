@@ -4,7 +4,7 @@ namespace App\Http\Livewire\NurseModule;
 
 use App\Http\Livewire\DataTable\WithCachedRows;
 use App\Http\Livewire\DataTable\WithPerPagePagination;
-use App\Models\His\IpdNewCase;
+use App\Models\HisIpdNewcase;
 use Livewire\Component;
 
 class IpdNewCases extends Component
@@ -33,7 +33,7 @@ class IpdNewCases extends Component
 
     public function getRowsQueryProperty()
     {
-        return IpdNewCase::query();
+        return HisIpdNewcase::query();
     }
 
     public function getRowsProperty()
